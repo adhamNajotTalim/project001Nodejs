@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, ::after, ::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid green;
+            height: 100vh;
+        }
+
+        #login-body {
+            border: 1px solid red;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <form id="login-body">
+        <h2>Login</h2>
+        <label for="email">
+            Email
+            <input  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email" id="email" name="email">
+        </label>
+        <label for="">
+            Password
+            <input type="password" id="pswd" name="pswd">
+        </label>
+        <!-- <button id="submitLogin">Login</button> -->
+        <input type="submit">
+    </form>
+
+    <script>
+    
+    submitLogin.addEventListener("click", () => {
+        console.log(email.valid)
+    })
+    </script>
+
+</body>
+</html>

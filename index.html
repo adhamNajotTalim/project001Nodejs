@@ -5,20 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *, ::after, ::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            padding: 30px;
+        }
+
+        /* div {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            padding: 10px;
+            margin: 10px;
+
+            border: 15px solid red;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        } */
+
+        .inputs {
+            display: flex;
+            flex-flow: column;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-<body id="bdy">
-    <input type="color" id="colors">
+<body>  
+    
+    <!-- <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, non.</p>
+    </div> -->
 
-    <script>
 
-        // let  = document.getElementById("colors")
-        colors.addEventListener("input", e => {
-            console.log(e.target.value)
-            bdy.style.backgroundColor = e.target.value;
-        })
+    
+    <!-- <div id="inputs">
+        <label for="Ball"> <input type="checkbox" name="Ball" id="">Ball</label>
+        <label for="Ball1"> <input type="checkbox" name="Ball1" id="">Ball1</label>
+        <label for="Ball2"> <input type="checkbox" name="Ball2" id="">Ball2</label>
+        <label for="Ball3"> <input type="checkbox" name="Ball3" id="">Ball3</label>
+    </div>
 
-    </script>
+    <div id="inputs">
+        <label for="Ball"> <input type="radio"  name="Ball" id="" >Ball</label>
+        <label for="Ball1"> <input type="radio" name="Ball" id="">Ball1</label>
+        <label for="Ball2"> <input type="radio" name="Ball" id="">Ball2</label>
+        <label for="Ball3"> <input type="radio" name="Ball" id="">Ball3</label>
+    </div> -->
 
+
+    <details>
+        <summary>Details</summary>
+        Something small enough to escape casual notice.
+    </details>
+
+
+    <!-- <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, non.</p>
+    </div> -->
 </body>
 </html>
 
